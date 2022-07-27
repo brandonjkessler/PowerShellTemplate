@@ -1,3 +1,21 @@
+<#
+    .SYNOPSIS
+
+    .DESCRIPTION
+    
+    .PARAMETER Path
+    
+    .INPUTS
+
+    .OUTPUTS
+
+    .EXAMPLE
+
+    .LINK
+#>
+
+
+
 [CmdletBinding()]
 param(
     [Parameter(Mandatory = $false, HelpMessage = 'Path to Save Log Files')]
