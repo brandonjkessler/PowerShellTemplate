@@ -35,6 +35,13 @@ begin{
 }
 process{
     #-- PROCESS: Executes second. Executes multiple times based on how many objects are sent to the function through the pipeline. Optional.
+    try{
+        #-- Try the things
+    } catch {
+        #-- Catch the error
+	    Write-Error $_.Exception.Message
+	    Write-Error $_.Exception.ItemName
+    }
 }
 end{
     # END: Executes Once. Executes Last. Useful for all things after process, like cleaning up after script. Optional.
